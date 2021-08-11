@@ -11,15 +11,9 @@ import ScoreBox from './ScoreBox';
   const [lives, setLives] = useState(5)
   const [score,setScore]=useState(0)
   const [cardArray, setCardArray]= useState([])
+  const [restart,setRestart]=useState('')
   let shuffledArray = []
-  const cardElement = {
-    id:1,
-    pair:1,
-    position:1,
-    flip:false,
-    hide:false,
-    img: null,
-  }
+
 useEffect(()=>{
     looper()
 },[starting])
@@ -195,7 +189,7 @@ console.log("before loop")
       }
       </div>
       <div className="main_scorebox">
-      <ScoreBox score={score} setScore={setScore} tries={lives} starting={starting} setStarting={setStarting} />
+      <ScoreBox score={score} setScore={setScore} tries={lives} setTries={setLives} starting={starting} setStarting={setStarting} set={setRestart}/>
       </div>
     </div>
   );

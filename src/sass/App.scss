@@ -42,19 +42,56 @@ body{
 }
 }
 .Side{
-  width: 250px;
+  width: 200px;
   height: 400px;
   background-color: #fff;
   padding: 1.5rem 2.5rem;
+  &_element
+  {
+    h5{
+      display: inline;
+      font-size:1.5rem;
+    }
+    p{
+      font-size: 1rem;
+      color: #777;
+    }
+    label
+    {
+      font-size: 1.5rem;
+      margin-right: 2rem;;
+      color:#666
+    }
+    select
+    {
+      font-size: 1rem;
+      color:#666;
+      width: 50%;
+      height: 1.5rem;
+      outline: none;
+      border:1px solid #aaa;
+      margin-bottom: 3rem;
+    }
+  button
+    {
+      border:none;
+      background-color:#1890ff;
+      color:whitesmoke;
+      padding:1rem 1.5rem;
+      width: 120px;
+      border-radius: 3px;
+    }
+  }
+
 }
 
 .card {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
   margin: 10px;
   transition: all 300ms;
-  flex-basis: 20%;
+  flex-basis: 22%;
 
   &-hide {
     opacity: 0;
@@ -100,7 +137,7 @@ body{
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: #1890ff;
   backface-visibility: hidden;
   top: 0;
   left: 0;
