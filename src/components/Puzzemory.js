@@ -44,6 +44,7 @@ function Puzzemory() {
 			.map(({ value }) => value);
 		console.log(shuffledArray);
 		setCardArray(shuffledArray);
+		
 	}
 
 	const [itemsFlipped, setItemsFlipped] = useState(0);
